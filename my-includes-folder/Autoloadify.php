@@ -6,7 +6,7 @@
  *
  * @package		Autoloadify
  * @author		Thilo Savage
- * @copyright	Copyright (c) 2012
+ * @copyright		Copyright (c) 2012
  * @link		http://Autoloadify.thilosavage.com
  * @since		Version 1.0
  * @filesource
