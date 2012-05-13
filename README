@@ -1,0 +1,36 @@
+Autoloadify is a utility for PHP developers.
+
+When your script encounters an undfined class, Autoloadify gives you options to create the class on the fly based on a template file.
+
+Upon creating the class, Autoloadify
+- creates the directory (if new) to the class file
+- creates the class file
+- populates the file with the template you selected
+- adds the directory (if new) to the autoload register
+
+
+-- INSTALLATION --
+1. Copy Autoloadify.php and the templates folder into your classes or includes directory
+2. Require and instantiate the class in a file in the root level of your app
+*** See example.php ***
+
+-- USAGE --
+- When writing code, write in class calls as if the classes have been declared.
+- Run the script. It will automatically prompt you to create the new classes.
+- When you submit the form, the current page will be reloaded with the new class autoloaded.
+
+-- TEMPLATES --
+- Change/add template files in /autoloadify_templates/
+- Change the directory of your templates folder in Autoloadify::templatesDir
+- Underscores in template filenames signify a default directory the file will be created in.
+
+Example:
+autoloadify_templates/some_folder_controller.php 
+will suggest the class be created in /some/folder/
+
+A template file WITHOUT any underscores will suggest the class be created
+in the folder where you put Autoloadify.php
+
+-- TODO FEATURES --
+- Add additional form fields for template variables in addition to {CLASSNAME}
+- Selecting a template populates a text area where you can write the new class in browser
