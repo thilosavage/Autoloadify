@@ -6,7 +6,7 @@ Upon creating the class, Autoloadify
 - creates the directory (if new) to the class file
 - creates the class file
 - populates the file with the template you selected
-- adds the directory (if new) to the autoload register
+- adds the directory (if new) to the autoload registry 
 
 
 -- INSTALLATION --
